@@ -32,6 +32,6 @@ export class MessagingService {
       .subscribe((message) => {
         console.log(message);
         this.currentMessage.next(message);
-      });
+      }, error => console.log(error));
   }
 }

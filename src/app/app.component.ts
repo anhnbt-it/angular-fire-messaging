@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
   }
 
   listen(): void {
+    console.log('listen');
     this.messageService.listen();
   }
 }
